@@ -1,6 +1,6 @@
 # timeshuffler_working-title
 En lyttemaskine som repræsentere en forvrænget/processeret udgave af det nutidige og datidige omkringliggende lydmiljø
-## Overordnet mål
+## overordnet mål
 
 At informere / oplyse / fortælle lytteren hvordan lyd igennem et medie er et filter som er baseret på the practitioners egen virkelighed og mål med den medierede lyd. - og at lytterens oplevelse derved aldrig er objektiv men et produkt af en andens fortælling af verden.
 
