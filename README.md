@@ -6,4 +6,4 @@ At informere / oplyse / fortælle lytteren hvordan lyd igennem et medie er et fi
 
 At give lytteren en følelse af at træde ind i en anden verden - en mere drømmende verden hvor tidslighed ikke er lineær.
 
-For bedst mulig forståelse for opleveren er tydeligheden af maskinens output, dens fortælling, og måden hvorpå brugeren interagerer med den, vigtig.
+For bedst mulig forståelse for opleveren er tydeligheden af maskinens output vigtig (dens fortælling, og måden hvorpå brugeren interagerer med den).
