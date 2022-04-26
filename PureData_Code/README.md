@@ -20,7 +20,7 @@ Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget l
 
 ### Abstractions_loudness-adjust
 
-___Compressor__
+_Compressor_
 
 
 Overgang Hvordan skal overgang mellem det presente og det fortidige lydmiljø repræsenteres - repræsentation skal ske i skiftet af rum - rummet repræsentere tiden vi er i(de to stadier) og overgang skal på bedst mulig vis repræsentere disse rum.
