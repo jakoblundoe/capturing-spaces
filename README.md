@@ -12,8 +12,9 @@ For bedst mulig forståelse for opleveren er tydeligheden af maskinens output vi
 
 ## kode - liveprocessering af lyd
 
-Jeg vil bruge Pure Data til at designe lydprocesseringen - som senere skal implenteres på et Bela Board der udgør hjertet af lyttemaskinen.
+Jeg vil bruge Pure Data til at designe lydprocesseringen - som senere skal implementeres på et Bela Board der udgør hjertet af lyttemaskinen.
 
+### Ekstra noter
 Overgang
 Hvordan skal overgang mellem det presente og det fortidige lydmiljø repræsenteres - repræsentation skal ske i skiftet af rum - rummet repræsentere tiden vi er i(de to stadier) og overgang skal på bedst mulig vis repræsentere disse rum.
 
