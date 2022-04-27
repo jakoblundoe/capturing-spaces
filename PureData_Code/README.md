@@ -68,12 +68,18 @@ Pitchshifting kan forekomme med en tilfældig afspilningshastighed.<p>
 
 #### delayShiftParam
 Delay kan forekomme med tilfældige værdier - feedback,, delaytime og amplitude.<p>
+<br />
+<br />
 
 ### Reverb_effektering
 Generel effekt. Sidst i kæden. Skal medvirke til ens fornemmelse af et drømmende univers.
+<br />
+<br />
 
 ### Knitren
 Generel effekt. Kan være et sample eller en granularsynth. Skal medvirke til ens fornemmelse af et drømmende univers.
+<br />
+<br />
 
 ### on/off_timer
 Maskinen skal tænde for lyden af sig selv ved interaktion med momentary switch eller fader-knappen. <p>
