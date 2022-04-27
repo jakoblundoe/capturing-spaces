@@ -48,6 +48,7 @@ __ABSTRACTIONS__<p>
 <em>__faderInputScaling__</em><p>
 <em>__timeScrollParam__</em><p>
 <em>__auditiveFeedbackDelay__</em><p>
+<em>__scrollAmplitudeParam__</em><p>
 <br />
 <br />
 
