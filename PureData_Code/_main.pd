@@ -1,4 +1,4 @@
-#N canvas 357 44 1302 680 10;
+#N canvas 419 76 1302 680 10;
 #X declare -path ./abstractions;
 #X text 35 32 Hello world!;
 #X text 35 42 ============;
@@ -29,14 +29,13 @@
 #X obj 56 532 cyclone/play~ samplequan 2;
 #X obj 128 664 *~;
 #X obj 92 665 *~;
-#X obj 505 595 auditiveFeedbackDelay~;
-#X obj 359 595 auditiveFeedbackDelay~;
-#X obj 363 420 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#X obj 363 420 vsl 15 128 0 10 0 0 empty empty empty 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X text 361 396 delaytime;
-#X obj 461 417 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#X obj 461 420 vsl 15 128 0 10 0 0 empty empty empty 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X text 458 393 delayamount;
+#X obj 387 618 auditiveFeedbackDelay~;
+#X text 458 397 delay_amplitude;
+#X text 361 396 delay_time;
 #X connect 11 0 21 0;
 #X connect 12 0 13 0;
 #X connect 13 0 21 0;
@@ -46,15 +45,7 @@
 #X connect 16 0 22 1;
 #X connect 16 0 23 1;
 #X connect 19 0 18 0;
-#X connect 21 0 25 0;
 #X connect 21 0 23 0;
-#X connect 21 1 24 0;
 #X connect 21 1 22 0;
 #X connect 22 0 17 1;
 #X connect 23 0 17 0;
-#X connect 24 0 22 0;
-#X connect 25 0 23 0;
-#X connect 26 0 25 1;
-#X connect 26 0 24 1;
-#X connect 28 0 25 2;
-#X connect 28 0 24 2;
