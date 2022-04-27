@@ -22,14 +22,14 @@ I.e. lydeffekter som eksempelvis reverb, delay, pitchshifting, compression/limit
 ### Loudness_control
 Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget lyd kan være højt og noget andet kan være lavt i amplituden, og jeg vil så vidt muligt sørge for at alt lyd er ligeligt i deres tydelighed. Det kræver en form for limiter/compressor som kan skrue ned og op afhængigt af den optagede amplitude
 
-__ABSTRACTIONS__<p>
+__ABSTRACTIONS__
 
 <em>__Compressor__</em>
-&nbsp;
+<br />
+<br />
 
 ### realtime_samplebuffer
-Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150sekunder. Når bufferen er aktiv skal den afspille lyd fra de sidste 150sekunder - med en step-inddeling i perioder af 30sekunder.<p>
-Disse 'afspilningsperioder' bliver valgt af timeslideren.
+Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150sekunder. Når bufferen er aktiv skal den afspille lyd fra de sidste 150sekunder - med en step-inddeling i perioder af 30sekunder.<p>Disse 'afspilningsperioder' bliver valgt af timeslideren.<p>
 
 __ABSTRACTIONS__
 
