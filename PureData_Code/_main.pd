@@ -1,11 +1,8 @@
-#N canvas 895 302 577 349 10;
+#N canvas 357 44 1302 680 10;
 #X declare -path ./abstractions;
-#X obj 39 163 dac~ 1 2;
 #X text 35 32 Hello world!;
 #X text 35 42 ============;
-#X obj 39 122 *~ 0.1;
-#X obj 39 101 osc~ 440;
-#X text 108 115 OMG SINE WAVE;
+#X text 112 69 OMG SINE WAVE;
 #X text 215 22 ............................;
 #X text 215 32 . ____ ._____ _ .......___ .;
 #X text 215 42 .| __ )| ____| |....../ _ |.;
@@ -14,7 +11,50 @@
 #X text 215 82 ............................;
 #X text 215 52 .| __ || __|.| |...../ _| |.;
 #X obj 420 29 declare -path ./abstractions;
-#X obj 379 173 pdcompressor~;
-#X connect 3 0 0 1;
-#X connect 3 0 0 0;
-#X connect 4 0 3 0;
+#X obj 180 470 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 90 447 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X msg 90 467 loop \$1;
+#X obj 141 399 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 596 218 loadbang;
+#X obj 231 422 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 92 691 output~;
+#X msg 40 121 \; pd dsp \$1;
+#X obj 40 85 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 596 265 cyclone/buffer~ samplequan QuantumFreqLong.wav;
+#X obj 56 532 cyclone/play~ samplequan 2;
+#X obj 128 664 *~;
+#X obj 92 665 *~;
+#X obj 505 595 auditiveFeedbackDelay~;
+#X obj 359 595 auditiveFeedbackDelay~;
+#X obj 363 420 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 361 396 delaytime;
+#X obj 461 417 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 458 393 delayamount;
+#X connect 11 0 21 0;
+#X connect 12 0 13 0;
+#X connect 13 0 21 0;
+#X connect 14 0 12 0;
+#X connect 14 0 11 0;
+#X connect 15 0 20 0;
+#X connect 16 0 22 1;
+#X connect 16 0 23 1;
+#X connect 19 0 18 0;
+#X connect 21 0 25 0;
+#X connect 21 0 23 0;
+#X connect 21 1 24 0;
+#X connect 21 1 22 0;
+#X connect 22 0 17 1;
+#X connect 23 0 17 0;
+#X connect 24 0 22 0;
+#X connect 25 0 23 0;
+#X connect 26 0 25 1;
+#X connect 26 0 24 1;
+#X connect 28 0 25 2;
+#X connect 28 0 24 2;
