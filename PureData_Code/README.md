@@ -22,9 +22,9 @@ I.e. lydeffekter som eksempelvis reverb, delay, pitchshifting, compression/limit
 ### Loudness_control
 Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget lyd kan være højt og noget andet kan være lavt i amplituden, og jeg vil så vidt muligt sørge for at alt lyd er ligeligt i deres tydelighed. Det kræver en form for limiter/compressor som kan skrue ned og op afhængigt af den optagede amplitude
 
-#### Abstractions
+__ABSTRACTIONS__
 
-__Compressor__
+<em>__Compressor__</em>
 
 
 
