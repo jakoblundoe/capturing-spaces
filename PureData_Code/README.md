@@ -18,6 +18,8 @@ __Analyserende redskaber__<p>
 Eksempelvis envelope following, realtime buffering og amplitude og frekvens-analyse.<p>
 __Lydprocesserende redskaber__<p>
 I.e. lydeffekter som eksempelvis reverb, delay, pitchshifting, compression/limiting og div. generative koncepter.
+<br />
+<br />
 
 ### Loudness_control
 Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget lyd kan være højt og noget andet kan være lavt i amplituden, og jeg vil så vidt muligt sørge for at alt lyd er ligeligt i deres tydelighed. Det kræver en form for limiter/compressor som kan skrue ned og op afhængigt af den optagede amplitude
@@ -35,6 +37,8 @@ __ABSTRACTIONS__
 
 <em>__micInputSystem__</em><p>
 <em>__liveBufferingTool__</em>
+<br />
+<br />
 
 ### timeSlideParam_fader
 Valg af afspilningsperiode i bufferen er styret af denne timeSlideParam_fader.
@@ -43,14 +47,20 @@ __ABSTRACTIONS__<p>
 
 <em>__faderInputScaling__</em><p>
 <em>__timeScrollParam__</em>
+<br />
+<br />
 
 ### on/off_toggle
 Hvis ikke on/off timer kan nås, er en toggle-switch til at tænde og slukke for lyden en mulighed. <p>
 Igen gerne med et sample til at give auditiv feedback - 'wooosh'.
+<br />
+<br />
 
 ### on/off_timer
 Maskinen skal tænde for lyden af sig selv ved interaktion med momentary switch eller fader-knappen. <p>
 Gerne med et sample til at give auditiv feedback - 'wooosh'.
+<br />
+<br />
 
 ### nutidDatidTransition
 Overgang mellem den nutidige og datidige lyd.
