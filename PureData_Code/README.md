@@ -14,18 +14,18 @@ Dette gør jeg for at vide mig sikker på at jeg har et fungerende produkt til d
 
 ## Funktioner
 Overordnet set kan mine funktioner deles op i to kategorier som er:<p>
-__Analyserende redskaber__
-Eksempelvis envelope following, realtime buffering og amplitude og -frekvensanalyse.<p>
-
-__Lydprocesserende redskaber__
-Også kaldet Forskellige effekter som reverb, delay, pitchshifting, compression/limiting og div. generative koncepter.
+__Analyserende redskaber__<p>
+Eksempelvis envelope following, realtime buffering og amplitude og frekvens-analyse.<p>
+__Lydprocesserende redskaber__<p>
+I.e. lydeffekter som eksempelvis reverb, delay, pitchshifting, compression/limiting og div. generative koncepter.
 
 ### Loudness_control
 Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget lyd kan være højt og noget andet kan være lavt i amplituden, og jeg vil så vidt muligt sørge for at alt lyd er ligeligt i deres tydelighed. Det kræver en form for limiter/compressor som kan skrue ned og op afhængigt af den optagede amplitude
 
-### Abstractions_loudness-adjust
+#### Abstractions
 
 __Compressor__
+
 
 
 Overgang Hvordan skal overgang mellem det presente og det fortidige lydmiljø repræsenteres - repræsentation skal ske i skiftet af rum - rummet repræsentere tiden vi er i(de to stadier) og overgang skal på bedst mulig vis repræsentere disse rum.
