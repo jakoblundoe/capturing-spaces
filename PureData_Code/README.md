@@ -22,24 +22,25 @@ I.e. lydeffekter som eksempelvis reverb, delay, pitchshifting, compression/limit
 ### Loudness_control
 Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget lyd kan være højt og noget andet kan være lavt i amplituden, og jeg vil så vidt muligt sørge for at alt lyd er ligeligt i deres tydelighed. Det kræver en form for limiter/compressor som kan skrue ned og op afhængigt af den optagede amplitude
 
-__ABSTRACTIONS__
+__ABSTRACTIONS__<p>
 
 <em>__Compressor__</em>
 
 ### realtime_samplebuffer
-Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150sekunder. Når bufferen er aktiv skal den afspille lyd fra de sidste 150sekunder - med en step-inddeling i perioder af 30sekunder. Disse 'afspilningsperioder' bliver valgt af af timeslideren
+Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150sekunder. Når bufferen er aktiv skal den afspille lyd fra de sidste 150sekunder - med en step-inddeling i perioder af 30sekunder.<p>
+Disse 'afspilningsperioder' bliver valgt af timeslideren.
 
 __ABSTRACTIONS__
 
-<em>__micInputSystem__</em>
+<em>__micInputSystem__</em><p>
 <em>__liveBufferingTool__</em>
 
 ### timeSlideParam_fader
 Valg af afspilningsperiode i bufferen er styret af denne timeSlideParam_fader.
 
-__ABSTRACTIONS__
+__ABSTRACTIONS__<p>
 
-<em>__faderInputScaling__</em>
+<em>__faderInputScaling__</em><p>
 <em>__timeScrollParam__</em>
 
 ### on/off_toggle
@@ -57,9 +58,10 @@ Overgang fra:<p>
 datidige til nutidige --> fastforward<p>
 nutidige til datidige --> rewind<p>
 
-__ABSTRACTIONS__
-<em>__bufferFastforward__</em>
-<em>__bufferRewind__</em>
+__ABSTRACTIONS__<p>
+<em>__bufferFastforward__</em><p>
+<em>__bufferRewind__</em><p>
+
 <em>Ekstra noter:<p>
 Hvordan skal overgang mellem det presente og det fortidige lydmiljø repræsenteres - repræsentation skal ske i skiftet af rum - rummet repræsentere tiden vi er i(de to stadier) og overgang skal på bedst mulig vis repræsentere disse rum.<p>
 En stærk / tydelig kommunikation af det datidige lydmiljø kan ved brug af reverb og delay processering. —->(det repræsenterer datid - som er noget man mindes - det drømmende - det fjerne(fjern fortid)) super sanselige vigtige keywords.</em>
