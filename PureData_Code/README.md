@@ -24,7 +24,8 @@ Skal bruges til at styre volume på det optagede og gengivede lydmiljø. Noget l
 
 __ABSTRACTIONS__<p>
 
-<em>__Compressor__</em><p><p><p>
+<em>__Compressor__</em>
+ 
 
 ### realtime_samplebuffer
 Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150sekunder. Når bufferen er aktiv skal den afspille lyd fra de sidste 150sekunder - med en step-inddeling i perioder af 30sekunder.<p>
