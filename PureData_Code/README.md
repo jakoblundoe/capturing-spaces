@@ -81,6 +81,11 @@ Generel effekt. Kan være et sample eller en granularsynth. Skal medvirke til en
 <br />
 <br />
 
+### drone_vibe
+Ekstra lydlig effekt til at skabe en stemning. Skal fungere som en slags 'underlægningslyd' til det drømmende univers.
+<br />
+<br />
+
 ### on/off_timer
 Maskinen skal tænde for lyden af sig selv ved interaktion med momentary switch eller fader-knappen. <p>
 Gerne med et sample til at give auditiv feedback - 'wooosh'.
