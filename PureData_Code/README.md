@@ -36,17 +36,18 @@ Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150
 __ABSTRACTIONS__
 
 <em>__micInputSystem__</em><p>
-<em>__liveBufferingTool__</em>
+<em>__liveBufferingTool__</em><p>
 <br />
 <br />
 
 ### timeSlideParam_fader
-Valg af afspilningsperiode i bufferen er styret af denne timeSlideParam_fader.
+Valg af afspilningsperiode i bufferen er styret af denne timeSlideParam_fader. Udover at sætte afspilningsperioden afgiver den også en lyd(fungerer som auditiv feedback til brugeren).<p>
 
 __ABSTRACTIONS__<p>
 
 <em>__faderInputScaling__</em><p>
-<em>__timeScrollParam__</em>
+<em>__timeScrollParam__</em><p>
+<em>__auditivFeedbackDelay__</em><p>
 <br />
 <br />
 
@@ -55,6 +56,24 @@ Hvis ikke on/off timer kan nås, er en toggle-switch til at tænde og slukke for
 Igen gerne med et sample til at give auditiv feedback - 'wooosh'.
 <br />
 <br />
+
+### createRandomValues
+Dette er det grundlæggende fundament for den generative maskine.<p>
+
+#### SoundSnippetPicker
+Indenfor den valgte tidsperiode i bufferen skal denne 'soundpicker' vælge et tilfældigt sted at afspille fra.<p>
+
+#### pitchShiftParam
+Pitchshifting kan forekomme med en tilfældig afspilningshastighed.<p>
+
+#### delayShiftParam
+Delay kan forekomme med tilfældige værdier - feedback,, delaytime og amplitude.<p>
+
+### Reverb_effektering
+Generel effekt. Sidst i kæden. Skal medvirke til ens fornemmelse af et drømmende univers.
+
+### Knitren
+Generel effekt. Kan være et sample eller en granularsynth. Skal medvirke til ens fornemmelse af et drømmende univers.
 
 ### on/off_timer
 Maskinen skal tænde for lyden af sig selv ved interaktion med momentary switch eller fader-knappen. <p>
