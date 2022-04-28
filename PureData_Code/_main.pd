@@ -64,13 +64,6 @@
 #X obj 1278 425 scrollAmplitudeParam~;
 #X obj 1278 622 cyclone/scale 0 1 0 0.5;
 #X obj 1086 646 auditiveFeedbackDelay~ 1 0.9 0;
-#X obj 990 158 line, f 9;
-#X obj 953 243 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
-#X obj 990 202 expr $f1 * pow($f1 \, 5);
-#X text 993 221 making line object exponential \, change last number
-in equation to get a faster curve, f 21;
-#X msg 990 127 1 \, 0 1000 0.5;
 #X connect 11 0 21 0;
 #X connect 12 0 13 0;
 #X connect 13 0 21 0;
@@ -108,6 +101,3 @@ in equation to get a faster curve, f 21;
 #X connect 46 0 37 0;
 #X connect 47 0 48 3;
 #X connect 48 0 35 0;
-#X connect 49 0 51 0;
-#X connect 51 0 50 0;
-#X connect 53 0 49 0;
