@@ -37,7 +37,7 @@ __ABSTRACTIONS__
 
 <em>__micInputSystem__</em><p>
 <em>__changeBufferSequencer__</em><p>
-<em>__liveBufferingTool__</em><p>
+<em>__liveBufferingToolStereo__</em><p>
 <br />
 <br />
 
