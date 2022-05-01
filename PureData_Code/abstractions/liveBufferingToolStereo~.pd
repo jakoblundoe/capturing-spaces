@@ -1,12 +1,4 @@
-#N canvas 337 251 1605 832 12;
-#X msg 20 41 \; pd dsp \$1;
-#X obj 20 18 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
-0 1;
-#X obj 71 621 *~;
-#X obj 110 621 *~;
-#X obj 71 695 output~;
-#X obj 142 620 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
-#000000 #000000 0 1;
+#N canvas 184 96 1605 832 12;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array depository01L 132300 float 1;
 #A 0 3.52136e-05 4.45076e-05 4.70077e-05 5.35045e-05 5.43442e-05 5.8539e-05
@@ -21721,52 +21713,22 @@
 0.00233551 0.00204742 0.00175798 0.00146979 0.00117866 0.000880504
 0.000585953 0.000295799 1.00038e-05 -0.000270677 -0.000546322;
 #X coords 0 0.02 132299 -0.02 200 140 1 0 0;
-#X restore 789 43 graph;
-#X obj 216 98 sel 1 0;
-#X msg 239 141 stop;
-#X obj 317 131 timer;
-#X msg 167 350 start;
-#X msg 238 351 stop;
-#X obj 73 340 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X restore 875 43 graph;
+#X obj 139 289 sel 1 0;
+#X msg 162 332 stop;
+#X obj 240 322 timer;
+#X msg 178 504 start;
+#X msg 249 505 stop;
+#X obj 84 494 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X msg 73 360 loop \$1;
-#X msg 314 372 loopinterp \$1;
-#X obj 328 348 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X msg 84 514 loop \$1;
+#X msg 325 526 loopinterp \$1;
+#X obj 339 502 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X floatatom 441 410 5 0 0 0 - - - 0;
-#X msg 358 438 interptime \$1;
-#X obj 189 182 tabwrite~ depository01L;
-#X obj 72 481 cyclone/play~ depository01L;
-#X obj 155 14 adc~ 1;
-#N canvas 338 98 1043 834 3secondstimer 0;
-#X obj 33 66 inlet;
-#X obj 38 186 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
-#X obj 150 201 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
-#X obj 150 242 metro 1000;
-#X obj 168 394 t b b b;
-#X obj 150 290 cyclone/counter 3;
-#X obj 150 346 sel 3;
-#X obj 131 130 t f f;
-#X msg 131 105 1;
-#X obj 39 452 outlet;
-#X text 31 11 inlet = inlet for BANG;
-#X text 31 30 outlet = outlet for on/off(1/0) message(on for 3 seconds)
-;
-#X connect 0 0 8 0;
-#X connect 1 0 9 0;
-#X connect 2 0 3 0;
-#X connect 3 0 5 0;
-#X connect 4 0 1 0;
-#X connect 4 1 5 2;
-#X connect 4 2 2 0;
-#X connect 5 0 6 0;
-#X connect 6 0 4 0;
-#X connect 7 0 1 0;
-#X connect 7 1 2 0;
-#X connect 8 0 7 0;
-#X restore 488 41 pd 3secondstimer;
+#X floatatom 452 564 5 0 0 0 - - - 0;
+#X msg 369 592 interptime \$1;
+#X obj 112 373 tabwrite~ depository01L;
+#X obj 83 635 cyclone/play~ depository01L;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array depository01R 132300 float 1;
 #A 0 8.31678e-07 2.83311e-06 2.54341e-06 3.77173e-06 3.98025e-06 4.57773e-06
@@ -34222,7 +34184,7 @@
 0.00101275 0.000814759 0.000122949 -0.000878643 -0.00191906 -0.0027654
 -0.00331408 -0.00358868 -0.00375253 -0.00407439 -0.00472614 -0.00563704
 -0.0066213 -0.00748391 -0.00798065 -0.00787055 -0.00705415 -0.00557201
--0.00361669 -0.00160593;
+-0.00361669 -0.00160593 ;
 #A 76000 -5.58328e-05 0.000607084 0.000143176 -0.00142751 -0.00378634
 -0.00639511 -0.00861273 -0.00987421 -0.00990913 -0.00875403 -0.00663264
 -0.00389946 -0.00103643 0.00144731 0.00311064 0.0036416 0.00299945
@@ -37251,7 +37213,7 @@
 0.00183826 0.00286108 0.00352773 0.00379775 0.00375101 0.00358722 0.00357234
 0.00381782 0.00417631 0.00436151 0.00415735 0.00364477 0.00311967 0.00286619
 0.00305312 0.00362987 0.00440441 0.00517762 0.00572015 0.00587034 0.00567302
-0.00533441 0.00509096;
+0.00533441 0.00509096 ;
 #A 95000 0.00509236 0.00533653 0.00566141 0.00586385 0.00582645 0.00554685
 0.0051413 0.00472665 0.00433605 0.00402647 0.00393696 0.00413319 0.00449673
 0.00483542 0.00500424 0.00495689 0.00471505 0.0043156 0.00383807 0.00343247
@@ -43377,53 +43339,99 @@
 0.00244843 0.00243023 0.00240249 0.00237077 0 0 0 0 0 0 0 0 0 0 0 0
 ;
 #X coords 0 0.02 132299 -0.02 200 140 1 0 0;
-#X restore 788 212 graph;
-#X obj 430 89 sel 1 0;
-#X obj 430 169 tabwrite~ depository01R;
-#X obj 368 13 adc~ 2;
-#X obj 558 117 timer;
-#X floatatom 558 141 5 0 0 0 - - - 0;
-#X msg 453 136 stop;
-#X obj 272 481 cyclone/play~ depository01R;
-#X obj 714 136 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X restore 874 212 graph;
+#X obj 382 280 sel 1 0;
+#X obj 353 360 tabwrite~ depository01R;
+#X obj 481 308 timer;
+#X floatatom 481 332 5 0 0 0 - - - 0;
+#X msg 405 327 stop;
+#X obj 283 635 cyclone/play~ depository01R;
+#X obj 552 322 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X floatatom 317 155 5 0 0 0 - - - 0;
-#X connect 1 0 0 0;
-#X connect 2 0 4 0;
-#X connect 3 0 4 1;
-#X connect 5 0 3 1;
-#X connect 5 0 2 1;
-#X connect 7 0 9 0;
-#X connect 7 0 18 0;
-#X connect 7 1 8 0;
-#X connect 7 1 9 1;
-#X connect 8 0 18 0;
-#X connect 9 0 31 0;
-#X connect 10 0 19 0;
-#X connect 10 0 29 0;
-#X connect 11 0 19 0;
-#X connect 11 0 29 0;
-#X connect 12 0 13 0;
-#X connect 13 0 19 0;
-#X connect 13 0 29 0;
-#X connect 14 0 19 0;
-#X connect 14 0 29 0;
-#X connect 15 0 14 0;
-#X connect 16 0 17 0;
-#X connect 17 0 19 0;
-#X connect 17 0 29 0;
-#X connect 19 0 2 0;
-#X connect 20 0 18 0;
-#X connect 21 0 7 0;
-#X connect 21 0 23 0;
-#X connect 23 0 24 0;
-#X connect 23 0 26 0;
-#X connect 23 1 26 1;
-#X connect 23 1 28 0;
-#X connect 23 1 10 0;
-#X connect 25 0 24 0;
-#X connect 26 0 27 0;
-#X connect 28 0 24 0;
-#X connect 29 0 3 0;
-#X connect 30 0 11 0;
-#X connect 30 0 21 0;
+#X floatatom 240 346 5 0 0 0 - - - 0;
+#X obj 112 182 inlet~;
+#X obj 353 182 inlet~;
+#X obj 603 182 f \$1;
+#X obj 552 143 inlet;
+#X text 27 68 inlet/argument \$1 = bang to start sampling/float sets
+sampletime(in seconds), f 76;
+#N canvas 338 98 1043 834 sampletimer 0;
+#X obj 33 170 inlet;
+#X obj 38 290 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 150 305 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 150 346 metro 1000;
+#X obj 168 498 t b b b;
+#X obj 150 394 cyclone/counter 3;
+#X obj 150 450 sel 3;
+#X obj 131 234 t f f;
+#X msg 131 209 1;
+#X obj 39 556 outlet;
+#X obj 293 172 inlet;
+#X text 31 11 inlet#1 = inlet for BANG;
+#X text 32 61 outlet = outlet for on/off(1/0) message(on in the seconds
+specified in 'counter' object), f 88;
+#X floatatom 293 395 5 0 0 0 - - - 0;
+#X text 30 37 inlet#2 = sets samplingtime in seconds;
+#X connect 0 0 8 0;
+#X connect 1 0 9 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 1 0;
+#X connect 4 1 5 2;
+#X connect 4 2 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 7 0 1 0;
+#X connect 7 1 2 0;
+#X connect 8 0 7 0;
+#X connect 10 0 13 0;
+#X connect 13 0 5 4;
+#X connect 13 0 6 1;
+#X restore 605 237 pd sampletimer;
+#X obj 685 150 loadbang;
+#X obj 83 677 outlet~;
+#X obj 283 677 outlet~;
+#X text 28 97 outlet~ (1) = for the left audiosignal out;
+#X text 28 114 outlet~ (2) = for the right audiosignal out;
+#X text 28 23 inlet~ (1) = for the left audiosignal in;
+#X text 28 39 inlet~ (2) = for the right audiosignal in;
+#X connect 1 0 3 0;
+#X connect 1 0 12 0;
+#X connect 1 1 2 0;
+#X connect 1 1 3 1;
+#X connect 2 0 12 0;
+#X connect 3 0 22 0;
+#X connect 4 0 13 0;
+#X connect 4 0 20 0;
+#X connect 5 0 13 0;
+#X connect 5 0 20 0;
+#X connect 6 0 7 0;
+#X connect 7 0 13 0;
+#X connect 7 0 20 0;
+#X connect 8 0 13 0;
+#X connect 8 0 20 0;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 11 0 13 0;
+#X connect 11 0 20 0;
+#X connect 13 0 30 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 15 1 17 1;
+#X connect 15 1 19 0;
+#X connect 15 1 4 0;
+#X connect 17 0 18 0;
+#X connect 19 0 16 0;
+#X connect 20 0 31 0;
+#X connect 21 0 5 0;
+#X connect 21 0 28 0;
+#X connect 23 0 12 0;
+#X connect 24 0 16 0;
+#X connect 25 0 28 1;
+#X connect 26 0 25 0;
+#X connect 26 0 21 0;
+#X connect 28 0 1 0;
+#X connect 28 0 15 0;
+#X connect 29 0 25 0;
