@@ -1,0 +1,26 @@
+#N canvas 1088 119 1033 577 12;
+#X msg 50 70 \; pd dsp \$1;
+#X obj 50 45 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 59 478 *~;
+#X obj 59 502 output~;
+#X obj 117 478 *~;
+#X obj 167 426 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 360 179 adc~ 1;
+#X obj 449 180 adc~ 2;
+#X obj 551 199 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 513 127 5 0 0 0 - - - 0;
+#X obj 360 255 liveBufferingToolStereo~ 10;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 2 1;
+#X connect 5 0 4 1;
+#X connect 6 0 10 0;
+#X connect 7 0 10 1;
+#X connect 8 0 10 3;
+#X connect 9 0 10 2;
+#X connect 10 0 2 0;
+#X connect 10 1 4 0;
