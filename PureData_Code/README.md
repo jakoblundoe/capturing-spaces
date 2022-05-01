@@ -36,6 +36,7 @@ Skal bruges til at optage og gemmme lyd i en samplebuffer med en længde på 150
 __ABSTRACTIONS__
 
 <em>__micInputSystem__</em><p>
+<em>__changeBufferSequencer__</em><p>
 <em>__liveBufferingTool__</em><p>
 <br />
 <br />
