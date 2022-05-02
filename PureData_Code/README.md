@@ -86,7 +86,9 @@ Generel effekt. Kan være et sample eller en granularsynth. Skal medvirke til en
 <br />
 
 ### drone_vibe
-Ekstra lydlig effekt til at skabe en stemning. Skal fungere som en slags 'underlægningslyd' til det drømmende univers.
+Ekstra lydlig effekt til at skabe en stemning. Skal fungere som en slags 'underlægningslyd' til det drømmende univers.<P>
+<em>__ambiPlusScrollFeed__</em><p>
+<em>extra notes: the auditiveFeedbackDelay abstraction is included here. it is used as a subpatcher instead of an abstraction due to the loading architecture which has been set for the project</em><p>
 <br />
 <br />
 
