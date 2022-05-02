@@ -1,4 +1,4 @@
-#N canvas 0 25 1440 787 10;
+#N canvas -2 25 1440 787 10;
 #X declare -path ./abstractions;
 #X text 35 32 Hello world!;
 #X text 35 42 ============;
