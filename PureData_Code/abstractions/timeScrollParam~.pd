@@ -1,4 +1,4 @@
-#N canvas 1111 51 1431 653 12;
+#N canvas 489 51 1431 653 12;
 #X obj 130 429 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 186 429 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
@@ -41,6 +41,7 @@
 #X obj 76 108 cyclone/scale 0 127 0 5.99;
 #X text 11 11 inlet/argument\$1 = recieves <f>(0-127) \, chooses which
 buffer is being send to main outlets, f 84;
+#X obj 7 296 loadbang;
 #X connect 0 0 2 0;
 #X connect 1 0 6 0;
 #X connect 2 0 24 0;
@@ -82,3 +83,4 @@ buffer is being send to main outlets, f 84;
 #X connect 30 0 23 0;
 #X connect 31 0 30 0;
 #X connect 32 0 31 0;
+#X connect 34 0 13 0;
