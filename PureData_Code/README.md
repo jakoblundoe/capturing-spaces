@@ -43,7 +43,7 @@ __ABSTRACTIONS__
 
 ### timeSlideParam_fader
 Valg af afspilningsperiode i bufferen er styret af denne timeSlideParam_fader. Udover at sætte afspilningsperioden afgiver den også en lyd(fungerer som auditiv feedback til brugeren).<p>
-Da de individuelle buffer's ikke repræsenterer en specifik tidsperiode er det nødvendigt at skabe en 'imaginær buffer' som repræsenterer tiden frem for selve buffer~-objektet. Dette vil jeg gøre ved at lave en abstraction som cirkulært sekvenserer rækkefølgen af alle buffer's.<p>
+Da de individuelle buffer's ikke repræsenterer en specifik tidsperiode er det nødvendigt at skabe en 'imaginær buffer' som repræsenterer tiden frem for selve buffer~-objektet. Dette vil jeg gøre ved at lave en abstraction som cirkulært sekvenserer rækkefølgen af alle buffer's, kaldet 'circularSequencer'.<p>
 
 __ABSTRACTIONS__<p>
 
@@ -51,7 +51,7 @@ __ABSTRACTIONS__<p>
 <em>__timeScrollParam__</em><p>
 <em>__auditiveFeedbackDelay__</em><p>
 <em>__scrollAmplitudeParam__</em><p>
-<em>__CircularSequencer__</em><p>
+<em>__circularSequencer__</em><p>
 <br />
 <br />
 
