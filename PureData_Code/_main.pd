@@ -1,4 +1,4 @@
-#N canvas 118 25 1440 787 10;
+#N canvas 153 90 1440 787 10;
 #X declare -path ./abstractions;
 #X text 35 32 Hello world!;
 #X text 35 42 ============;
@@ -46,8 +46,8 @@
 #X floatatom 393 351 5 0 0 0 - - - 0;
 #X obj 111 1271 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X obj 102 963 timeScrollParam~;
-#X obj 1086 325 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 46 980 timeScrollParam~;
+#X obj 1085 277 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 583 1893 *~;
 #N canvas 289 205 949 413 signalRouterStereo 0;
@@ -99,20 +99,20 @@
 #X connect 27 0 24 0;
 #X connect 28 0 27 0;
 #X connect 28 0 26 0;
-#X restore 379 1001 pd signalRouterStereo;
+#X restore 323 1018 pd signalRouterStereo;
 #X f 66;
-#X obj 1132 432 s smplStart;
+#X obj 1131 384 s smplStart;
 #X obj 114 561 r smplTime;
 #X obj 298 588 r smplTime;
 #X obj 437 616 r smplTime;
 #X obj 575 641 r smplTime;
 #X obj 714 669 r smplTime;
 #X obj 853 695 r smplTime;
-#X obj 1132 403 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 1131 355 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 1132 347 togedge;
-#X obj 1216 432 s smplStop;
-#X obj 1216 404 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 1131 299 togedge;
+#X obj 1215 384 s smplStop;
+#X obj 1215 319 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X floatatom 633 1893 4 0 120 0 - - - 0;
 #X floatatom 661 1917 4 0 100 0 - - - 0;
@@ -125,11 +125,11 @@
 #X obj 537 1957 rev3~ 100 93 67 20, f 21;
 #X text 40 209 \$1 threshold - \$2 ratio - \$3 response \$4 gain -
 \$5 rmspeak - \$6 lookahead, f 37;
-#X obj 105 907 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#X obj 49 924 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X text 3044 2531 widen;
-#X obj 589 1094 *~ 5;
-#X obj 374 1088 *~ 5;
+#X obj 586 1192 *~ 5;
+#X obj 371 1186 *~ 5;
 #X obj 161 2024 clip~ -0.1 0.1;
 #X obj 268 2024 clip~ -0.1 0.1;
 #N canvas -1415 25 1414 820 ambiPlusScrollFeed 0;
@@ -362,35 +362,49 @@
 #X connect 79 0 80 0;
 #X connect 80 0 36 0;
 #X restore 631 1365 pd ambiPlusScrollFeed;
-#X obj 123 927 s timeSliderScroll;
+#X obj 67 944 s timeSliderScroll;
 #X obj 631 1336 r timeSliderScroll;
-#X obj 903 1351 circularSequencer~;
+#X obj 202 855 circularSequencer~, f 104;
+#X obj 531 457 del 5;
+#X obj 393 455 del 5;
+#X obj 670 456 del 5;
+#X obj 808 454 del 5;
+#X obj 947 453 del 5;
+#X obj 1086 455 del 5;
+#X obj 1274 353 s resetCircularCounter;
+#X obj 645 516 s bufferBANG;
 #X connect 12 0 11 0;
 #X connect 13 0 60 0;
 #X connect 14 0 13 1;
 #X connect 14 0 39 1;
-#X connect 16 0 17 3;
-#X connect 17 0 40 1;
-#X connect 17 1 40 2;
-#X connect 18 0 19 3;
-#X connect 19 0 40 3;
-#X connect 19 1 40 4;
-#X connect 20 0 23 3;
-#X connect 21 0 24 3;
-#X connect 22 0 25 3;
-#X connect 23 0 40 5;
-#X connect 23 1 40 6;
-#X connect 24 0 40 7;
-#X connect 24 1 40 8;
-#X connect 25 0 40 9;
-#X connect 25 1 40 10;
+#X connect 16 0 73 0;
+#X connect 16 0 79 0;
+#X connect 17 0 71 0;
+#X connect 17 1 71 1;
+#X connect 18 0 72 0;
+#X connect 18 0 79 0;
+#X connect 19 0 71 2;
+#X connect 19 1 71 3;
+#X connect 20 0 74 0;
+#X connect 20 0 79 0;
+#X connect 21 0 75 0;
+#X connect 21 0 79 0;
+#X connect 22 0 76 0;
+#X connect 22 0 79 0;
+#X connect 23 0 71 4;
+#X connect 23 1 71 5;
+#X connect 24 0 71 6;
+#X connect 24 1 71 7;
+#X connect 25 0 71 8;
+#X connect 25 1 71 9;
 #X connect 26 0 13 0;
 #X connect 26 0 66 0;
 #X connect 27 0 39 0;
 #X connect 27 0 67 0;
-#X connect 28 0 29 3;
-#X connect 29 0 40 11;
-#X connect 29 1 40 12;
+#X connect 28 0 77 0;
+#X connect 28 0 79 0;
+#X connect 29 0 71 10;
+#X connect 29 1 71 11;
 #X connect 30 0 16 0;
 #X connect 30 1 18 0;
 #X connect 30 2 20 0;
@@ -430,6 +444,7 @@
 #X connect 49 0 48 0;
 #X connect 49 1 51 0;
 #X connect 51 0 50 0;
+#X connect 51 0 78 0;
 #X connect 52 0 60 2;
 #X connect 53 0 60 3;
 #X connect 54 0 60 4;
@@ -445,3 +460,21 @@
 #X connect 68 0 26 0;
 #X connect 68 1 27 0;
 #X connect 70 0 68 0;
+#X connect 71 0 40 1;
+#X connect 71 1 40 2;
+#X connect 71 2 40 3;
+#X connect 71 3 40 4;
+#X connect 71 4 40 5;
+#X connect 71 5 40 6;
+#X connect 71 6 40 7;
+#X connect 71 7 40 8;
+#X connect 71 8 40 9;
+#X connect 71 9 40 10;
+#X connect 71 10 40 11;
+#X connect 71 11 40 12;
+#X connect 72 0 19 3;
+#X connect 73 0 17 3;
+#X connect 74 0 23 3;
+#X connect 75 0 24 3;
+#X connect 76 0 25 3;
+#X connect 77 0 29 3;
