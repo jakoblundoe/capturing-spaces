@@ -1,4 +1,4 @@
-#N canvas -2 25 1440 787 10;
+#N canvas 118 25 1440 787 10;
 #X declare -path ./abstractions;
 #X text 35 32 Hello world!;
 #X text 35 42 ============;
@@ -43,7 +43,7 @@
 #X obj 43 322 pdcompressor~ 33 40 39, f 23;
 #X obj 199 321 pdcompressor~ 33 40 39, f 23;
 #X obj 198 247 adc~ 2;
-#X floatatom 393 352 5 0 0 0 - - - 0;
+#X floatatom 393 351 5 0 0 0 - - - 0;
 #X obj 111 1271 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X obj 102 963 timeScrollParam~;
@@ -123,8 +123,8 @@
 #X text 694 1917 liveness \, feedback percentage (0-100);
 #X text 751 1968 High Frequency damping \, percentage (0-100);
 #X obj 537 1957 rev3~ 100 93 67 20, f 21;
-#X text 62 197 \$1 threshold - \$2 ratio - \$3 response \$4 gain -
-\$5 rmspeak - \$6 lookahead;
+#X text 40 209 \$1 threshold - \$2 ratio - \$3 response \$4 gain -
+\$5 rmspeak - \$6 lookahead, f 37;
 #X obj 105 907 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
 #X text 3044 2531 widen;
@@ -132,7 +132,7 @@
 #X obj 374 1088 *~ 5;
 #X obj 161 2024 clip~ -0.1 0.1;
 #X obj 268 2024 clip~ -0.1 0.1;
-#N canvas -1080 115 1080 757 ambiPlusScrollFeed 0;
+#N canvas -1415 25 1414 820 ambiPlusScrollFeed 0;
 #X obj 349 21 inlet;
 #X obj 425 176 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
@@ -364,6 +364,7 @@
 #X restore 631 1365 pd ambiPlusScrollFeed;
 #X obj 123 927 s timeSliderScroll;
 #X obj 631 1336 r timeSliderScroll;
+#X obj 903 1351 circularSequencer~;
 #X connect 12 0 11 0;
 #X connect 13 0 60 0;
 #X connect 14 0 13 1;
