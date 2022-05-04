@@ -12,7 +12,6 @@
 #X obj 69 131 r \$0-thresh;
 #X obj 69 193 r \$0-ratio;
 #X obj 69 261 r \$0-thresh;
-#X text 283 134 -> for cosmetic purpose only;
 #X obj 458 59 switch~;
 #X obj 458 31 inlet;
 #X connect 0 0 1 0;
@@ -27,7 +26,7 @@
 #X connect 9 0 6 1;
 #X connect 10 0 7 1;
 #X connect 11 0 8 1;
-#X connect 14 0 13 0;
+#X connect 13 0 12 0;
 #X restore 226 202 pd RMS GAIN COMPUTATION;
 #N canvas 736 311 482 627 PEAK 0;
 #X obj 46 50 inlet~;
@@ -40,13 +39,12 @@
 #X obj 63 128 r \$0-thresh;
 #X obj 64 207 r \$0-ratio;
 #X obj 64 288 r \$0-thresh;
-#X text 292 135 -> for cosmetic purpose only;
 #X obj 253 135 +~ 0;
 #X obj 303 34 inlet;
 #X obj 303 58 switch~;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X connect 1 0 11 0;
+#X connect 1 0 10 0;
 #X connect 2 0 6 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
@@ -54,8 +52,8 @@
 #X connect 7 0 2 1;
 #X connect 8 0 6 1;
 #X connect 9 0 3 1;
-#X connect 11 0 4 1;
-#X connect 12 0 13 0;
+#X connect 10 0 4 1;
+#X connect 11 0 12 0;
 #X restore 434 203 pd PEAK GAIN COMPUTATION;
 #X obj 34 25 inlet~;
 #N canvas 1040 363 450 300 delwrite 0;

@@ -134,7 +134,7 @@
 #X text 931 460 bufferTime#1;
 #X text 303 478 PAST, f 12;
 #X text 931 476 PRESENT, f 12;
-#N canvas -1440 25 1440 847 matrixCommands 1;
+#N canvas -1440 25 1440 847 matrixCommands 0;
 #X obj 28 26 inlet;
 #X obj 1870 743 outlet;
 #X obj 166 267 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
@@ -496,7 +496,6 @@
 #X restore 224 294 pd matrixCommands;
 #X obj 16 222 counter 5, f 22;
 #X obj 16 146 sel 5;
-#X obj 35 289 print;
 #X connect 0 0 28 1;
 #X connect 1 0 28 2;
 #X connect 3 0 28 3;
@@ -527,6 +526,5 @@
 #X connect 28 10 44 0;
 #X connect 28 11 45 0;
 #X connect 55 0 28 0;
-#X connect 56 0 58 0;
 #X connect 56 0 55 0;
 #X connect 57 0 56 0;
