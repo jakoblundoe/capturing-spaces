@@ -4,7 +4,7 @@
             display: block; margin-left: auto; margin-right: auto; width: 100%; border: solid gray; align: center
         }
         p {
-            color: rgb(169, 169, 169);
+            ;
         }
         h1, h2, h3, h4, h5, h6 {
             color: rgb(200, 200, 200);
@@ -21,17 +21,17 @@
 
 # capturing spaces / droemmefanger
 ## Concept and purpose
+<p style="color: rgb(169, 169, 169)">
 **capturing spaces** is a portable interactive sound installation which aims to activate the listeners awareness of the surrounding sound environment. This is done through live processing of the sounds around you. The concept evolves around enhancing the already present soundscape, while recording this soundscape into memory and replaying it randomly and according to some specific rules defined in the code. It is generating a *generative composition* of the past and present soundscape it is placed within. The goal is to make the listener intrigued and curious to venture around with the device and *interact* with the sound environments they find.
+</p>
 
-
-<div class="image-row">
-    <img style="width: 49%; margin-left: 1px; margin-right: 9px" src="img/capturing-spaces_exhibited_image-01.png" />
-    <img style="width: 49%" src="img/capturing-spaces_image-01.png" />
-</div>
+<img style="width: 49%" src="img/capturing-spaces_exhibited_image-01.png" />
+<img style="width: 49%" src="img/capturing-spaces_image-01.png" />
 
 <br>
+<h3 class="centertext">Video</h3>
 
-<iframe width="560" height="450" src="https://www.youtube.com/embed/Zv3LVDvMo8s?si=lsXt3v7E8lGOPxHR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
 
 <br>
 
