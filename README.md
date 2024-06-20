@@ -4,8 +4,8 @@
 
 
 
-<img src="img/capturing-spaces_exhibited_image-01.png" width="100%" />
-<img src="img/capturing-spaces_image-01-copy.png" width="100%"/>
+<img src="img/capturing-spaces_exhibited_image-01.png" width="90%" />
+<img src="img/capturing-spaces_image-01-copy.png" width="90%"/>
 
 <br>
 
