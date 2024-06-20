@@ -1,6 +1,6 @@
 <h1>capturing spaces / droemmefanger</h1>
 
-<h2>Concept and purpose</h2>
+<h2>Description and concept</h2>
 
 **capturing spaces** is a portable interactive sound installation which aims to activate the listeners awareness of the surrounding sound environment. This is done through live processing of the sounds around you. The concept evolves around enhancing the already present soundscape, while recording this soundscape into memory and replaying it randomly and according to some specific rules defined in the code. It is generating a *generative composition* of the past and present soundscape it is placed within. The goal is to make the listener intrigued and curious to venture around with the device and *interact* with the sound environments they find.
 
