@@ -12,6 +12,10 @@
         .centertext {
             text-align: center;
         }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -20,11 +24,14 @@
 **capturing spaces** is a portable interactive sound installation which aims to activate the listeners awareness of the surrounding sound environment. This is done through live processing of the sounds around you. The concept evolves around enhancing the already present soundscape, while recording this soundscape into memory and replaying it randomly and according to some specific rules defined in the code. It is generating a *generative composition* of the past and present soundscape it is placed within. The goal is to make the listener intrigued and curious to venture around with the device and *interact* with the sound environments they find.
 
 
+<div class="image-row">
+    <img style="width: 49%; margin-left: 1px; margin-right: 9px" src="img/capturing-spaces_exhibited_image-01.png" />
+    <img style="width: 49%" src="img/capturing-spaces_image-01.png" />
+</div>
 
-<img style="width: 100%" src="img/capturing-spaces_exhibited_image-01.png" />
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zv3LVDvMo8s?si=lsXt3v7E8lGOPxHR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="450" src="https://www.youtube.com/embed/Zv3LVDvMo8s?si=lsXt3v7E8lGOPxHR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
 
