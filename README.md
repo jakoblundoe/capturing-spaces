@@ -2,7 +2,6 @@
 ## Concept and purpose
 **capturing spaces** is a portable interactive sound installation which aims to activate the listeners awareness of the surrounding sound environment. This is done through live processing of the sounds around you. The concept evolves around enhancing the already present soundscape, while recording this soundscape into memory and replaying it randomly and according to some specific rules defined in the code. It is generating a *generative composition* of the past and present soundscape it is placed within. The goal is to make the listener intrigued and curious to venture around with the device and *interact* with the sound environments they find.
 
-
 <div align="center">
     <img src="img/capturing-spaces_exhibited_image-01.png" width="95%" />
     <img src="img/capturing-spaces_image-01-copy.png" width="95%"/>
@@ -11,10 +10,10 @@
 <br>
 
 <div align="center">
-  <h3> Video </h3>
-</div>
+  <h2> Video </h2>
 
-[![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
+  [![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
+</div>
 
 <br>
 
@@ -35,7 +34,6 @@ The programming of the system is done with the visual scripting language Pure Da
     <img style="width: 60%" src="img/puredata-images/scrollAmplitudeParam~-pd_image.png" />
 
 </div>
-
 
 ## Hardware implementation
 Using a belaboard which is compatible with Pure Data.
