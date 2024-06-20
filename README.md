@@ -9,6 +9,10 @@
 
 <br>
 
+<div align="center">
+  <h3> Video </h3>
+</div>
+
 [![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
 
 <br>
