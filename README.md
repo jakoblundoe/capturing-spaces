@@ -42,5 +42,5 @@ Potentiometers added to a breadboard connected to the belaboard. The potentiomet
     <h3>Hardware sketch</h3>
     <img style="width: 80%" src="img/capturing-spaces_hardware-sketch.png" />
     <h3>Inside the box</h3>
-    <img style="width: 80%" src="img/capturing-spaces_image-04.png" />
+    <img style="width: 80%" src="img/capturing-spaces_image-01-copy.png" />
 </div>
