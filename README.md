@@ -22,7 +22,7 @@
 
 <br>
 
-<h1>How it works</h1>
+<h1>How it work</h1>
 On the back of the box two omnidirectional electret microphones is placed. They record the environment to a 30 second long buffer on the device inside the box. The system then chooses small snippets of sound within that buffer and plays it, while processing it with different effects and sample manipulations. What effects and what sound snippets is chosen is based on a randomizer that is defined in the code. On top of the generative sample buffer it also replays the 'present' soundscape live to the listener, adding different audio effects.
 
 <h2>Software</h2>
