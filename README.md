@@ -1,36 +1,88 @@
-<h1>capturing spaces / droemmefanger</h1>
-<div align="center">
-    <img src="img/droemmefanger.gif" width="80%" />
-</div>
+# Droemmefanger
 
-<h2>Description and concept</h2>
-
-**capturing spaces** is a portable interactive sound installation which aims to activate the listeners awareness of the surrounding sound environment. This is done through live processing of the sounds around you. The concept evolves around enhancing the already present soundscape, while recording this soundscape into memory and replaying it randomly and according to some specific rules defined in the code. It is generating a *generative composition* of the past and present soundscape it is placed within. The goal is to make the listener intrigued and curious to venture around with the device and *interact* with the sound environments they find.
+*A portable interactive sound installation transforming the soundscape around the listener*
+<br>
+<br>
 
 <div align="center">
-    <img src="img/capturing-spaces_exhibited_image-01(4-3).png" width="40%" />
-    <img src="img/capturing-spaces_image-01-copy.png" width="40%"/>
+    <img src="img/droemmefanger.gif" width="98%" alt="Capturing Spaces Overview"/>
 </div>
+<br>
+
+## Overview and Concept
+**Droemmefanger** is a portable, interactive sound installation designed to create awareness towards the listeners surrounding soundscape environment. Through live sound processing it captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.
+
+The system is generating a generative composition of the past and present soundscape it is placed within.
+
+The concept and goal of the installation is to encourage the listener to venture around with the device and interact with the various soundscape environments, transforming each location into a new and different sound experience.
+
+*Droemmefanger was exhibited at Moesgaard Museum as part of MatchPoints 2022.*
+
+<br>
+
+## Table of Contents
+1. [How It Works](#how-it-works)
+2. [Hardware Implementation](#hardware-implementation)
+3. [Software Implementation](#software-implementation)
+4. [Video Demo](#video-demo)
 
 <br>
 
 <div align="center">
-  <h2> Video </h2>
-
-  [![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
+    <img src="img/capturing-spaces_exhibited_image-01(4-3).png" width="45%" alt="Capturing Spaces Image 1"/>
+    <img src="img/capturing-spaces_image-01-copy.png" width="45%" alt="Capturing Spaces Image 2"/>
 </div>
 
 <br>
 
-<h1>How it work</h1>
-On the back of the box two omnidirectional electret microphones is placed. They record the environment to a 30 second long buffer on the device inside the box. The system then chooses small snippets of sound within that buffer and plays it, while processing it with different effects and sample manipulations. What effects and what sound snippets is chosen is based on a randomizer that is defined in the code. On top of the generative sample buffer it also replays the 'present' soundscape live to the listener, adding different audio effects.
+## How It Works
 
-<h2>Software</h2>
-The programming of the system is done with the visual scripting language Pure Data which is specifically designed for signal programming and audio processing. The code is based on a *main* patch and several *abstractions* which the main patch is utilizing.
+**Droemmefanger** enhances the natural soundscape through live recording and randomized playback.
+
+- Records ambient sounds and replay snippets in randomized intervals, with randomized audio manipulation effects applied.
+- Generates new sound textures which consists of effect processed live sound with effect processed recorded sounds.
+
+It functions as a generative sound composition tool, continuously evolving based on its placement and the ambient noise it records.
+
+<br>
+
+## Hardware Implementation
+
+The system uses a **Belaboard**, compatible with Pure Data, as its main hardware controller. Key components include:
+- **Microphones:** Two omnidirectional electret microphones for sound input.
+- **Potentiometers:** Analog to digital converters that control parameters in the Pure Data patch.
+- **Breadboard and Wiring:** Custom wiring setup to connect the Belaboard and potentiometers.
+
+*Droemmefanger* use the microphones attached to the back of the device to capture the surrounding sound. The beloboard then plays the captured audio in real-time + it records a continuous 30-second sound buffer.
+
+The potentiometers control if the patch is muted + what part of the sound buffer the code is using to create the generative composition.
+
+### Hardware Sketch
+<div align="center">
+    <img src="img/capturing-spaces_hardware-sketch.png" width="80%" alt="Hardware Sketch"/>
+</div>
+
+### Inside the Box
+<div align="center">
+    <img src="img/capturing-spaces_image-04-rotate90deg.png" width="80%" alt="Internal Components"/>
+</div>
+
+<br>
+
+## Software Implementation
+
+The system is developed using **Pure Data (Pd)**, a visual programming language suited for real-time sound processing. The program is structured into a main patch and several *abstractions* which the main patch is utilizing:
+
+## Main Patch
 <div align="center">
     <h3>_main.pd patch</h3>
     <img style="width: 80%" src="img/puredata-images/_main-pd_image.png" width="90%" />
-    <h3>Examples on abstractions</h3>
+</div>
+
+<br>
+
+## Key Abstractions
+<div align="center">
     <h4>liveBufferingToolStereo~</h4>
     <img style="width: 80%" src="img/puredata-images/liveBufferingToolStereo~-pd_image.png" />
     <h4>timeScrollParam~</h4>
@@ -39,12 +91,12 @@ The programming of the system is done with the visual scripting language Pure Da
     <img style="width: 60%" src="img/puredata-images/scrollAmplitudeParam~-pd_image.png" />
 </div>
 
-<h2>Hardware implementation</h2>
-Using a belaboard which is compatible with Pure Data.
-Potentiometers added to a breadboard connected to the belaboard. The potentiometers is converted from analog to digital signal and used to control the parameters in the code.
+<br>
+
 <div align="center">
-    <h3>Hardware sketch</h3>
-    <img style="width: 80%" src="img/capturing-spaces_hardware-sketch.png" />
-    <h3>Inside the box</h3>
-    <img style="width: 80%" src="img/capturing-spaces_image-04-rotate90deg.png" />
+  <h2> Video Demo </h2>
+
+  [![Link to video of the design](/img/ThumbnailCapture-crop.jpg)](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
+
+  [Watch the video demo on YouTube](https://www.youtube.com/watch?v=Zv3LVDvMo8s)
 </div>
